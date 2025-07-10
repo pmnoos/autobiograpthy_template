@@ -1,0 +1,2 @@
+# This file ensures the storage directory is kept in git
+# Rails needs this directory to exist for file uploads
