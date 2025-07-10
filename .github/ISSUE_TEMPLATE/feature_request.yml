@@ -1,0 +1,74 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature! Your ideas help make this template better for everyone.
+        
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: Feature Type
+      description: What type of feature are you suggesting?
+      options:
+        - New template design/theme
+        - Improved documentation
+        - Setup/installation improvement
+        - New functionality
+        - Performance improvement
+        - Accessibility improvement
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Description
+      description: What problem would this feature solve?
+      placeholder: Describe the problem or limitation you're experiencing...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How would you like this to work?
+      placeholder: Describe your proposed solution...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Have you considered any alternative approaches?
+      placeholder: Describe any alternative solutions you've considered...
+      
+  - type: dropdown
+    id: user-type
+    attributes:
+      label: User Type
+      description: This feature would primarily help...
+      options:
+        - Non-technical users
+        - Technical users
+        - Both technical and non-technical users
+        - Template developers/contributors
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched for similar feature requests
+          required: true
+        - label: This feature aligns with the project's goal of helping people preserve their life stories
+          required: true
