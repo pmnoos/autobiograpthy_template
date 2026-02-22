@@ -12,6 +12,21 @@ class ChaptersController < ApplicationController
     @chapters = Chapter.all.order_chapters_with_intro_first
   end
 
+  # PATCH /chapters/reorder
+  def reorder
+    chapter_ids = params[:chapter_ids]
+
+    return head :unprocessable_entity unless chapter_ids.is_a?(Array)
+
+    Chapter.transaction do
+      chapter_ids.each_with_index do |id, index|
+        Chapter.where(id: id).update_all(sort_order: index + 1)
+      end
+    end
+
+    head :ok
+  end
+
   # GET /chapters/1 or /chapters/1.json
   def show
   end
@@ -71,6 +86,6 @@ class ChaptersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def chapter_params
-      params.expect(chapter: [ :title, :subtitle, :image_header, :content ])
+      params.expect(chapter: [ :title, :subtitle, :custom_label, :custom_number, :image_header, :content ])
     end
 end

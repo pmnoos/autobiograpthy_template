@@ -1,6 +1,6 @@
-# Contributing to Autobiography Template
+# Contributing to M_C_Story
 
-Thank you for your interest in contributing to the Autobiography Template! This project helps people preserve their life stories in beautiful, professional websites.
+Thank you for your interest in contributing to M_C_Story! This project helps people preserve their life stories in beautiful, professional websites.
 
 ## 🎯 Ways to Contribute
 

@@ -1,6 +1,6 @@
 # 🎨 Customization Guide
 
-This guide will help you customize the Autobiography Template with your own content, branding, and styling.
+This guide will help you customize M_C_Story with your own content, branding, and styling.
 
 ## 🖼️ Adding Your Profile Photo
 

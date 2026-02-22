@@ -1,6 +1,6 @@
-# 🌟 Getting Started with Your Autobiography Template
+# 🌟 Getting Started with M_C_Story
 
-Welcome to your personal autobiography template! This guide will help you transform this template into your own unique life story website.
+Welcome to M_C_Story! This guide will help you transform this project into your own unique life story website.
 
 ## 🎯 What You'll Create
 

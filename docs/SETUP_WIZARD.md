@@ -1,6 +1,6 @@
 # 🧙‍♂️ Setup Wizard
 
-This step-by-step wizard will guide you through setting up your autobiography template from start to finish. Follow each step in order for the best experience.
+This step-by-step wizard will guide you through setting up M_C_Story from start to finish. Follow each step in order for the best experience.
 
 ## 📋 Pre-Setup Checklist
 
@@ -15,7 +15,7 @@ Before we begin, make sure you have:
 
 We'll complete these phases:
 1. **Environment Setup** - Install required software
-2. **Template Installation** - Get the autobiography template running
+2. **Template Installation** - Get M_C_Story running
 3. **Initial Customization** - Add your basic information
 4. **Content Preparation** - Plan your autobiography structure
 5. **Testing** - Make sure everything works correctly
@@ -167,7 +167,7 @@ rails server
 
 1. **Open your browser**
 2. **Visit:** http://localhost:3000
-3. **You should see:** The autobiography template homepage with sample chapters
+3. **You should see:** The M_C_Story homepage with sample chapters
 
 **✅ Success Indicators:**
 - Homepage loads without errors
@@ -318,10 +318,10 @@ Test in multiple browsers:
 
 ## 🎉 Completion Checklist
 
-Congratulations! You've successfully set up your autobiography template. You should now have:
+Congratulations! You've successfully set up M_C_Story. You should now have:
 
 - [ ] ✅ Working Ruby on Rails application
-- [ ] ✅ Autobiography template running locally
+- [ ] ✅ M_C_Story running locally
 - [ ] ✅ Basic personalization completed
 - [ ] ✅ Profile photo added (optional)
 - [ ] ✅ Content plan created

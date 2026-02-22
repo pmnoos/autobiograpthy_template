@@ -1,6 +1,6 @@
 # 👤 User Experience Overview
 
-This guide explains what you and your readers can expect from the Autobiography Template, helping you understand the complete experience from setup to sharing your life story.
+This guide explains what you and your readers can expect from M_C_Story, helping you understand the complete experience from setup to sharing your life story.
 
 ## 🎯 What This Template Provides
 
@@ -234,7 +234,7 @@ This guide explains what you and your readers can expect from the Autobiography 
 ## 🌈 The Bigger Picture
 
 ### Why This Matters
-Your autobiography template isn't just a website—it's:
+M_C_Story isn't just a website—it's:
 - **A Legacy Project:** Something meaningful for future generations
 - **A Family Connector:** Bringing relatives together around shared history
 - **A Memory Preserver:** Capturing stories that might otherwise be lost

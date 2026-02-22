@@ -1,4 +1,4 @@
-# 📖 Autobiography Template
+# 📖 M_C_Story
 
 **Transform your life story into a beautiful, professional website that family and friends will treasure forever.**
 
@@ -80,10 +80,13 @@ setup.bat
 For those who want full control:
 
 ```bash
+copy .env.example .env
 bundle install
-rails db:create db:migrate db:seed
-rails server
+bundle exec rails db:create db:migrate db:seed
+bundle exec rails server
 ```
+
+Update `.env` with your PostgreSQL password before running database commands.
 
 **Then visit:** http://localhost:3000
 

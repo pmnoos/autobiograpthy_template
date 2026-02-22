@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Autobiography Template" %></title>
+    <title><%= content_for(:title) || app_display_name %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -41,7 +41,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                 </svg>
               </div>
-              <span class="text-xl font-bold text-gray-900">[Your Name]'s Autobiography</span>
+              <span class="text-xl font-bold text-gray-900"><%= app_display_name %></span>
             <% end %>
           </div>
 
@@ -123,11 +123,11 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
               </svg>
             </div>
-            <span class="text-xl font-semibold text-gray-900">[Your Name]'s Life Story</span>
+            <span class="text-xl font-semibold text-gray-900"><%= app_display_name %></span>
           </div>
           <p class="text-gray-600 max-w-2xl mx-auto">
             A personal journey through life's chapters, memories, and moments. 
-            This digital autobiography template helps preserve stories and photographs for future generations.
+            <%= app_display_name %> helps preserve stories and photographs for future generations.
           </p>
         </div>
 
@@ -159,7 +159,7 @@
         <!-- Bottom Bar -->
         <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <div class="text-gray-700 text-sm">
-            © <%= Date.current.year %> [Your Name]'s Autobiography. All rights reserved.
+            © <%= Date.current.year %> <%= app_display_name %>. All rights reserved.
           </div>
           <div class="text-gray-500 text-sm mt-2 md:mt-0">
             Last updated: <%= Date.current.strftime("%B %Y") %>

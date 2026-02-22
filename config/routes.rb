@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :chapters do
     collection do
       get :list
+      patch :reorder
     end
   end
   resource :session

@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_07_07_032854) do
+ActiveRecord::Schema[8.0].define(version: 2026_02_22_000200) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "pg_catalog.plpgsql"
+
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
     t.text "body"
@@ -56,6 +59,9 @@ ActiveRecord::Schema[8.0].define(version: 2025_07_07_032854) do
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "custom_label"
+    t.integer "custom_number"
+    t.integer "sort_order", default: 0, null: false
   end
 
   create_table "photos", force: :cascade do |t|

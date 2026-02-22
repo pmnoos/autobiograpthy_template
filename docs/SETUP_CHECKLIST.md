@@ -10,7 +10,7 @@ Print this page and check off each step as you complete your autobiography websi
 - [ ] Rails 7.0+ installed and working  
 - [ ] Git installed (for downloading template)
 - [ ] Text editor ready (VS Code, Sublime, etc.)
-- [ ] Downloaded autobiography template to computer
+- [ ] Downloaded M_C_Story to computer
 
 ---
 

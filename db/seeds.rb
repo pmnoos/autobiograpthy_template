@@ -35,9 +35,7 @@ sample_content = ContentHelper.generate_sample_content("[Your Name]")
 sample_content[:chapters].each_with_index do |chapter_data, index|
   chapter = Chapter.create!(
     title: chapter_data[:title],
-    content: chapter_data[:content],
-    position: chapter_data[:position],
-    published: chapter_data[:published]
+    content: chapter_data[:content]
   )
   
   puts "   ✅ Created: #{chapter.title}"

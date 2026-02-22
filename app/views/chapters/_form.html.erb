@@ -13,12 +13,32 @@
 
   <div class="my-5">
     <%= form.label :title %>
-    <%= form.text_field :title, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": chapter.errors[:title].none?, "border-red-400 focus:outline-red-600": chapter.errors[:title].any?}] %>
+    <%= form.text_field :title, placeholder: "e.g. Childhood Memories", class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": chapter.errors[:title].none?, "border-red-400 focus:outline-red-600": chapter.errors[:title].any?}] %>
   </div>
 
   <div class="my-5">
     <%= form.label :subtitle %>
-    <%= form.text_field :subtitle, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": chapter.errors[:subtitle].none?, "border-red-400 focus:outline-red-600": chapter.errors[:subtitle].any?}] %>
+    <%= form.text_field :subtitle, placeholder: "Optional subtitle", class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": chapter.errors[:subtitle].none?, "border-red-400 focus:outline-red-600": chapter.errors[:subtitle].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :custom_label, "Chapter Label (Optional)" %>
+    <%= form.text_field :custom_label, list: "chapter-label-presets", placeholder: "Choose a preset or type your own", class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": chapter.errors[:custom_label].none?, "border-red-400 focus:outline-red-600": chapter.errors[:custom_label].any?}] %>
+    <datalist id="chapter-label-presets">
+      <option value="Introduction"></option>
+      <option value="Prologue"></option>
+      <option value="Interlude"></option>
+      <option value="Epilogue"></option>
+      <option value="Finale"></option>
+      <option value="Afterword"></option>
+    </datalist>
+    <p class="text-sm text-gray-500 mt-2">Pick a preset from the dropdown or type any custom label. Leave blank to use automatic chapter numbering.</p>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :custom_number, "Chapter Number Override (Optional)" %>
+    <%= form.number_field :custom_number, min: 1, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": chapter.errors[:custom_number].none?, "border-red-400 focus:outline-red-600": chapter.errors[:custom_number].any?}] %>
+    <p class="text-sm text-gray-500 mt-2">Use this to set a specific number like 1, 2, 10, etc. Ignored when a chapter label is set.</p>
   </div>
 
   <div class="my-5">
