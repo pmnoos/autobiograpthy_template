@@ -4,6 +4,10 @@ Rails.application.routes.draw do
     collection do
       get :list
       patch :reorder
+      get :export_pdf
+    end
+    member do
+      get :export_chapter_pdf
     end
   end
   resource :session
